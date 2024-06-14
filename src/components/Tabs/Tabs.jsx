@@ -35,7 +35,7 @@ export function Tabs({ children }) {
         </div>
       </div>
 
-      <div className="p-5 w-[500px] mx-auto">
+      <div className="p-5 max-w-[500px] mx-auto">
         {children.map((item, i) => (
           <div key={`content-${i}`} className={`${i === activeTab ? "visible" : "hidden"}`}>
             {item.props.component}
